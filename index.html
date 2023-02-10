@@ -7,11 +7,9 @@
     <meta name="author" content="FaradTech">
     <meta name="generator" content="Hugo 0.108.0">
     <title>TechExpo©BST</title>
-
+    <script src="./assets/drop.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
-
-    
-
+    <link rel="stylsheet" href="./assets/style.css">
     
 
 <link href="./components/css/bootstrap.min.css" rel="stylesheet">
@@ -25,67 +23,14 @@
 <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#712cf9">
 
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- css file link -->
     <link href="blog.css" rel="stylesheet">
   </head>
   <body>
+
+<!--landing page-->
     
 <div class="container">
   <header class="blog-header lh-1 py-3">
@@ -93,26 +38,24 @@
       <div class="col-4 text-center">
         <a class="blog-header-logo text-dark" href="#" style="font-weight: 400px;text-decoration: none;">TechExpo©BST</a>
       </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="link-secondary" href="#" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-        </a>
-      </div>
+      <video id="background-video" autoplay loop muted poster="video.mp4">
+        <source src="video.mp4" type="video/mp4">
+        </video>
     </div>
   </header>
-
+<!--Menu for Desktop view-->
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
       <a class="p-2 link-secondary" href="#web_dev" style="text-decoration: none;">Web Dev</a>
       <a class="p-2 link-secondary" href="#app_dev" style="text-decoration: none;">App Dev</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">AI/ML</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Cloud Computing</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Web 3.0</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Big Data</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Cybersecurity</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Blockchain</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Virtual Reality</a>
-      <a class="p-2 link-secondary" href="#" style="text-decoration: none;">Data Science</a>
+      <a class="p-2 link-secondary" href="#AIML" style="text-decoration: none;">AI/ML</a>
+      <a class="p-2 link-secondary" href="#Cloud" style="text-decoration: none;">Cloud Computing</a>
+      <a class="p-2 link-secondary" href="#Web3" style="text-decoration: none;">Web 3.0</a>
+      <a class="p-2 link-secondary" href="#BigData" style="text-decoration: none;">Big Data</a>
+      <a class="p-2 link-secondary" href="#Cyber" style="text-decoration: none;">Cybersecurity</a>
+      <a class="p-2 link-secondary" href="#Blockchain" style="text-decoration: none;">Blockchain</a>
+      <a class="p-2 link-secondary" href="#Viritual" style="text-decoration: none;">Virtual Reality</a>
+      <a class="p-2 link-secondary" href="#Data" style="text-decoration: none;">Data Science</a>
 
     </nav>
   </div>
@@ -127,6 +70,7 @@
     </div>
   </div>
 
+  <!--simple grid layout/ masonry-->
   <div class="row mb-2">
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -138,7 +82,7 @@
           <a href="#" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <img src="index.jpeg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"/></img>
         </div>
       </div>
     </div>
@@ -152,105 +96,53 @@
           <a href="#" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <img src="tech.png" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"></img>
         </div>
       </div>
     </div>
   </div>
-
+<!--Details of Menu-->
   <div class="row g-5" id="web_dev">
     <div class="col-md-8">
       <h3 class="pb-4 mb-4 fst-italic border-bottom">
         Web Development
       </h3>
       <article class="blog-post">
-        <h2 class="blog-post-title mb-1">New feature</h2>
-        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+        <h2 class="blog-post-title mb-1" style="color: rgb(139, 7, 7);">“Website without visitors is like a ship lost in the horizon.” </h2>
+        <p class="blog-post-meta">January 27, 2023 by <a href="#">Vince</a></p>
 
-        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <p><i>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</i></p>
         <ul>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
+          <li><span style="color: brown;">Web development</span> can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development. </li>
+          
         </ul>
-        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
       </article>
 
       <nav class="blog-pagination" aria-label="Pagination">
-        <a class="btn btn-outline-primary rounded-pill" href="#">Learn</a>
+        <a class="btn btn-outline-primary rounded-pill" href="https://www.udemy.com/course/foundations-of-front-end-development/" target="_blank" >Learn</a>
       </nav>
 
     </div>
 
     <div class="row g-5" id="app_dev">
-      <div class="col-md-8">
         <h3 class="pb-4 mb-4 fst-italic border-bottom">
          App Development
         </h3>
         <article class="blog-post">
-          <h2 class="blog-post-title mb-1">New feature</h2>
-          <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+          <h2 class="blog-post-title mb-1" style="color: rgb(139, 7, 7);">Making an app is like drinking a cup of coffee.</h2>
+          <p class="blog-post-meta">December 14, 2020 by <a href="#">Murah</a></p>
   
-          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          <p><i>Mobile application development is the set of processes and procedures involved in writing software for small, wireless computing devices, such as smartphones and other hand-held devices.</i></p>
           <ul>
-            <li>First list item</li>
-            <li>Second list item with a longer description</li>
-            <li>Third list item to close it out</li>
+            <li><span style="color: brown;">Mobile application development</span> is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Hence, the mobile development process involves creating installable software bundles (code, binaries, assets, etc.) , implementing backend services such as data access with an API, and testing the application on target devices.</li>
           </ul>
-          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
         </article>
   
         <nav class="blog-pagination" aria-label="Pagination">
-          <a class="btn btn-outline-primary rounded-pill" href="#">Learn</a>
+          <a class="btn btn-outline-primary rounded-pill" href="https://www.udemy.com/course/learn-flutter-beginners-course/" target="_blank" >Learn</a>
         </nav>
   
       </div>
-      <div class="row g-5">
-        <div class="col-md-8">
-          <h3 class="pb-4 mb-4 fst-italic border-bottom">
-            Artifial Intelligence and Machine Learning
-          </h3>
-          <article class="blog-post">
-            <h2 class="blog-post-title mb-1">New feature</h2>
-            <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-    
-            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-            <ul>
-              <li>First list item</li>
-              <li>Second list item with a longer description</li>
-              <li>Third list item to close it out</li>
-            </ul>
-            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-          </article>
-    
-          <nav class="blog-pagination" aria-label="Pagination">
-            <a class="btn btn-outline-primary rounded-pill" href="#">Learn</a>
-          </nav>
-    
-        </div>
-        <div class="row g-5">
-          <div class="col-md-8">
-            <h3 class="pb-4 mb-4 fst-italic border-bottom">
-              Cloud Computing
-            </h3>
-            <article class="blog-post">
-              <h2 class="blog-post-title mb-1">New feature</h2>
-              <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-      
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <ul>
-                <li>First list item</li>
-                <li>Second list item with a longer description</li>
-                <li>Third list item to close it out</li>
-              </ul>
-              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-            </article>
-      
-            <nav class="blog-pagination" aria-label="Pagination">
-              <a class="btn btn-outline-primary rounded-pill" href="#">Learn</a>
-            </nav>
-      
-          </div>
 
     <div class="col-md-4">
       <div class="position-sticky" style="top: 2rem;">
@@ -258,25 +150,52 @@
           <h4 class="fst-italic">About</h4>
           <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
         </div>
-
+<!--Quick links to the programming languages-->
         <div class="p-4">
           <h4 class="fst-italic">Archives</h4>
           <ol class="list-unstyled mb-0">
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">React.js</a></li>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">Typescript</a></li>
-            <li><a href="#">Go</a></li>
+            <li>
+              <a onclick="myFunction()" href="#">
+                <script>
+                function myFunction() {
+                  alert("JavaScript, a high-level, object-based, dynamic scripting language, is a popular tool for making web pages interactive.")
+                  }
+                </script>
+                  JavaScript</a>
+            </li>
+            <li><a onclick="myFunction()" href="#">Python</a>
+              <script>
+                function myFunction() {
+                  alert("Python is a readable and versatile programming language used with applications ranging from web development to machine learning.")
+                  }
+                </script>
+            
+            </li>
+            <li><a onclick="myFunction()" href="#">React.js</a>
+              <script>
+                function myFunction() {
+                  alert("React is a popular JavaScript framework for creating front-end applications, such as user interfaces that allow users to interact with programs.")
+                  }
+                </script>
+            </li>
+            <li><a onclick="myFunction()" href="#">PHP</a>
+              <script>
+                function myFunction() {
+                  alert("PHP is a popular server scripting language known for creating dynamic and interactive web pages.")
+                  }
+                </script>
+            </li>
+            <li><a onclick="myFunction()" href="#">Typescript</a></li>
+            <li><a onclick="myFunction()" href="#">Go</a></li>
           </ol>
         </div>
-
+<!--Social Media links-->
         <div class="p-4">
           <h4 class="fst-italic">Elsewhere</h4>
           <ol class="list-unstyled">
             <li><a href="">GitHub</a></li>
-            <li><a href="https://twitter.com/build_scitech">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/company/buildscitech/mycompany/?viewAsMember=true">LinkedIn</a></li>
+            <li><a href="https://twitter.com/build_scitech" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/company/buildscitech/mycompany/?viewAsMember=true" target="_blank">LinkedIn</a></li>
           </ol>
         </div>
       </div>
@@ -285,8 +204,8 @@
 
 </main>
 
-<footer class="blog-footer">
-  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+<footer class="blog-footer" style="margin: 50px;">
+  <p>Blog built for <a href="#">TechExpo©BST</a> by <a href="https://buildscitech.my.canva.site" target="_blank">BUILD SCITECH</a>.</p>
   <p>
     <a href="#">Back to top</a>
   </p>
