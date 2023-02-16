@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="FaradTech">
-    <meta name="generator" content="Hugo 0.108.0">
+    <meta name="generator" content="BST Software Team">
     <title>TechExpo©BST</title>
     <script src="./assets/drop.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
-    <link rel="stylsheet" href="./assets/style.css">
+    <link rel="stylsheet" href="./components/styling/style.css">
+    <link rel="stylsheet" href="./components/styling/comment.css">
     
 
 <link href="./components/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +27,7 @@
     <!-- Custom styles -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- css file link -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="./components/styling/blog.css" rel="stylesheet">
   </head>
   <body>
 
@@ -38,8 +39,6 @@
       <div class="col-4 text-center">
         <a class="blog-header-logo text-dark" href="#" style="font-weight: 400px; text-decoration: none;font-size: 15px;">TechExpo©BST</a>
       </div>
-
-        </video>
     </div>
   </header>
 <!--Menu for Desktop view-->
@@ -77,11 +76,11 @@
           <a id="world_link"><strong class="d-inline-block mb-2 text-primary">TechWorld</strong></a> 
           <h3 class="mb-0">Recent Tech Update</h3>
           <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto" style="font-size: 15px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text mb-auto" style="font-size: 15px;">Just In! Taming of Silicon Semiconductors to improve Superconductivity of Micro/Integrated Chips ....</p>
           <a href="#" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="index.jpeg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"/></img>
+          <img src="./assets/img/index.jpeg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"/></img>
         </div>
       </div>
     </div>
@@ -91,11 +90,11 @@
           <strong class="d-inline-block mb-2 text-success">Build SciTech</strong>
           <h3 class="mb-0">Upcoming Events</h3>
           <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto"style="font-size: 15px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <p class="mb-auto"style="font-size: 15px;"><i>BUILD SCITECH</i> is a science and technology startup which aims at using innovative and scientific discoveries to make impacts in the society.</p>
+          <a href="https://www.linkedin.com/company/buildscitech/mycompany/?viewAsMember=true" target="_blank"  class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="tech.png" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"></img>
+          <img src="./assets/img/tech.png" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"></img>
         </div>
       </div>
     </div>
@@ -147,32 +146,32 @@
       <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
           <h4 class="fst-italic">About</h4>
-          <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+          <p class="mb-0">As part of our initiatives, BUILD SCITECH comes your way with this great site to aid technology studies and applications.</p>
         </div>
 <!--Quick links to the programming languages-->
         <div class="p-4">
           <h4 class="fst-italic">Archives</h4>
           <ol class="list-unstyled mb-0">
             <li>
-              <a onclick="myFunction()" href="#">
+              <a onclick="myFunction_3()" href="#">
                 <script>
-                function myFunction() {
+                function myFunction_3() {
                   alert("JavaScript, a high-level, object-based, dynamic scripting language, is a popular tool for making web pages interactive.")
                   }
                 </script>
                   JavaScript</a>
             </li>
-            <li><a onclick="myFunction()" href="#">Python</a>
+            <li><a onclick="myFunction_2()" href="#">Python</a>
               <script>
-                function myFunction() {
+                function myFunction_2() {
                   alert("Python is a readable and versatile programming language used with applications ranging from web development to machine learning.")
                   }
                 </script>
             
             </li>
-            <li><a onclick="myFunction()" href="#">React.js</a>
+            <li><a onclick="myFunction_1()" href="#">React.js</a>
               <script>
-                function myFunction() {
+                function myFunction_1() {
                   alert("React is a popular JavaScript framework for creating front-end applications, such as user interfaces that allow users to interact with programs.")
                   }
                 </script>
@@ -200,14 +199,26 @@
       </div>
     </div>
   </div>
-
+  <div class="comment-box">
+    <form action="https://formsubmit.co/buildscitech@gmail.com" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" required></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
 </main>
 
 <footer class="blog-footer" style="margin: 50px;">
-  <p>Blog built for <a href="#">TechExpo©BST</a> by <a href="https://buildscitech.my.canva.site" target="_blank">FaradTech</a>.</p>
+  <p>Blog built for <a href="#">TechExpo©BST</a> by <a href="https://github.com/FaradayJnr" target="_blank">BUILD SCITECH</a>.</p>
   <p>
     <a href="#">Back to top</a>
   </p>
+  
 </footer>
 
 
